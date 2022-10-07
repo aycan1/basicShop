@@ -27,14 +27,3 @@ nextButton.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
   container.scrollLeft += box[0].offsetWidth;
 });
-
-// for mobil touch event
-// container.addEventListener("touchstart",(e)=>{
-// start=e.touches[0].clientX;
-// })
-// container.addEventListener("touchmove", (e) => {
-//     e.preventDefault();
-//     let touch = e.touches[0];
-//     change = start - touch.clientX;
-//   });
-//   container.addEventListener("touchend", slideShow);
