@@ -1,0 +1,314 @@
+@charset "UTF-8";
+*::after,
+*::before, * {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Avenir;
+  font-size: 88%;
+}
+
+body {
+  box-sizing: border-box;
+  color: #000000;
+}
+
+@media (max-width: 1620px) {
+  html {
+    font-size: 70.3%;
+  }
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 52%;
+  }
+}
+@media (max-width: 1050px) {
+  html {
+    font-size: 45.5%;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 39%;
+  }
+}
+.layout {
+  width: 100%;
+  height: 86.4rem;
+  display: flex;
+  overflow-x: hidden;
+}
+.layout .col-1-of-2 {
+  width: 50%;
+  box-sizing: border-box;
+}
+.layout .col-1-of-2 .photo {
+  width: 100%;
+  height: 100%;
+}
+.layout__content {
+  position: relative;
+}
+.layout .text {
+  padding-left: 16.6666666667%;
+}
+.layout .text__heading {
+  margin-top: 9.6rem;
+  font-weight: 700;
+  font-size: 3.125rem;
+  line-height: 4.062rem;
+  text-align: left;
+  width: 68.6111111111%;
+  display: flex;
+  align-items: flex-end;
+  font-family: ITCAvantGardePro-Bold;
+}
+.layout .text__paragraph {
+  margin-top: 1.2rem;
+  margin-bottom: 3.2rem;
+  width: 43.2rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #666666;
+}
+.layout .text__desc {
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 1.28rem;
+  line-height: 1.7rem;
+  text-decoration-color: #000000;
+  text-underline-offset: 0.5rem;
+  color: #000000;
+}
+.layout .text .next-sembol {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 87.7777777778%;
+  bottom: 28.3rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout .text .next-sembol img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.layout .slide-part {
+  padding-left: 16.6666666667%;
+  padding-top: 6.8rem;
+  padding-bottom: 9.5rem;
+  display: flex;
+  width: 60rem;
+  height: 36.3rem;
+  overflow-x: hidden;
+}
+.layout .slide-part__container {
+  width: 60rem;
+  height: 100%;
+  display: flex;
+  scroll-behavior: smooth;
+}
+.layout .slide-part__container .card {
+  margin-right: 3.2rem;
+  pointer-events: none;
+  position: relative;
+}
+.layout .slide-part__container .card__photo {
+  width: 23rem;
+  height: 31rem;
+}
+.layout .slide-part__container .card__photo--description {
+  margin-top: 1.2rem;
+  height: 40px;
+}
+.layout .slide-part__container .card__photo--description-text {
+  font-weight: 400;
+  line-height: 2rem;
+  font-size: 1.28rem;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.layout .slide-part__container .card__photo--price {
+  margin-top: 4px;
+  font-size: 12.8px;
+  line-height: 20px;
+}
+.layout .slide-part__container .card__photo--colors {
+  display: flex;
+  justify-content: flex-end;
+}
+.layout .slide-part__container .card__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.layout .color-selected {
+  border-radius: 10rem;
+  width: 1rem;
+  height: 1rem;
+  border: 0.1rem solid #000000;
+  background-color: #ffffff;
+  display: flex;
+  z-index: 1;
+}
+.layout .color-selected__inner {
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: #99c3cc;
+  border: 1.5px solid #ffffff;
+}
+.layout .color-1 {
+  border-radius: 10rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #cc9999;
+  margin-left: 0.8rem;
+}
+.layout .color-2 {
+  border-radius: 10rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #cb99cc;
+  margin-left: 0.8rem;
+}
+.layout .color-3 {
+  border-radius: 10rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #a6cc99;
+  margin-left: 0.8rem;
+}
+
+@media (max-width: 840px) {
+  .layout {
+    margin: 0;
+    min-width: 360px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+  }
+  .layout .col-1-of-2 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .layout .col-1-of-2 .photo {
+    width: 100%;
+    height: 437px;
+    height: 437px;
+    object-fit: cover;
+  }
+  .layout__image {
+    height: 437px;
+  }
+  .layout__content {
+    height: 535px;
+    margin-top: -218px;
+  }
+  .layout .text {
+    padding-left: 0;
+    z-index: 1;
+  }
+  .layout .text-box {
+    width: 86.6666666667%;
+    margin: 0 auto;
+  }
+  .layout .text__heading {
+    margin-top: 29px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .layout .text__paragraph {
+    display: none;
+  }
+  .layout .text__desc {
+    font-size: 12.8px;
+    line-height: 17px;
+    color: #ffffff;
+    text-decoration-color: #ffffff;
+  }
+  .layout .text .next-sembol {
+    display: none;
+  }
+  .layout .slide-part {
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 32px;
+    width: 100%;
+    height: 293px;
+  }
+  .layout .slide-part__container {
+    padding-left: 24px;
+  }
+  .layout .slide-part__container .card {
+    color: #000000;
+    margin-right: 12px;
+  }
+  .layout .slide-part__container .card__photo {
+    width: 148px;
+    height: 200px;
+  }
+  .layout .slide-part__container .card__photo--description {
+    margin-top: 8px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .layout .slide-part__container .card__photo--description-text {
+    font-size: 12.8px;
+    line-height: 20.48px;
+  }
+  .layout .slide-part__container .card__photo--price {
+    font-size: 12.8px;
+    line-height: 20px;
+  }
+  .layout .slide-part__container .card__details {
+    margin-top: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+@font-face {
+  font-family: “Avenir”;
+  src: url("/css/Avenir.ttc") format(“truetype”);
+}
+@font-face {
+  font-family: ITCAvantGardePro-Bk;
+  src: url("/css/ITCAvantGardePro-Bk.otf") format(“opentype”);
+}
+@font-face {
+  font-family: ITCAvantGardePro-Bold;
+  src: url("/css/ITCAvantGardePro-Bold.otf") format(“opentype”);
+}
+@font-face {
+  font-family: ITCAvantGardePro-Demi;
+  src: url("/css/ITCAvantGardePro-Demi.otf") format(“opentype”);
+}
+@font-face {
+  font-family: ITCAvantGardePro-Md;
+  src: url("/css/ITCAvantGardePro-Md.otf") format(“opentype”);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+*::after,
+*::before,* {
+  margin: 0;
+  padding: 0;
+
+}
+html {
+  font-family: Avenir;
+  font-size: 88%;
+
+}
+body{
+  box-sizing: border-box;
+  color: #000000;
+
+}
+@media (max-width: 1620px) {
+  html{
+    font-size: 70.3%;
+  }
+}
+@media (max-width: 1440px) {
+  html{
+    font-size: 62.5%;
+  }
+}
+@media (max-width: 1200px) {
+  html{
+    font-size: 52%;
+  }
+}
+@media (max-width: 1050px) {
+  html{
+    font-size: 45.5%;
+  }
+}
+@media (max-width: 900px) {
+  html{
+    font-size: 39%;
+  }
+}
